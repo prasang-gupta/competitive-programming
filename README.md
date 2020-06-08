@@ -3,15 +3,20 @@ My accepted solutions for different competitive programming websites including L
 
 The structure of the repository is as follows :
 
-.
-+-- codechef
-|   +-- LEARNDSA-DSALearningSeries          (In Progress)
-+-- hackerrank
-|   +-- 30-days-of-code                     (In Progress)
-|   +-- cpp                                 (Completed)
-|   +-- interview-preparation-kit           (In Progress)
-+-- leetcode
-|   +-- may-leetcoding-challenge            (In Progress)
-|   +-- june-leetcoding-challenge           (In Progress)
+📦competitive-programming\
+ ┃\
+ ┣ 📂**codechef**\
+ ┃ ┗ 📂LEARNDSA-DSALearningSeries\
+ ┃\
+ ┣ 📂**hackerrank**\
+ ┃ ┣ 📂30-days-of-code\
+ ┃ ┣ 📂cpp\
+ ┃ ┣ 📂interview-preparation-kit\
+ ┃\
+ ┣ 📂**leetcode**\
+ ┃ ┣ 📂june-leetcoding-challenge\
+ ┃ ┣ 📂may-leetcoding-challenge\
+ ┃\
+ ┗ 📜README.md
 
 I will be adding more stuff soon.
