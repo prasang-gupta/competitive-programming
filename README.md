@@ -9,6 +9,7 @@ The structure of the repository is as follows :
  ┃ ┗ 📂LEARNDSA-DSALearningSeries &#x2757;\
  ┃\
  ┣ 📂**hackerrank**\
+ ┃ ┣ 📂10-days-of-javascript &#x2705;\
  ┃ ┣ 📂30-days-of-code &#x2757;\
  ┃ ┣ 📂cpp &#x2705;\
  ┃ ┣ 📂interview-preparation-kit &#x2757;\
