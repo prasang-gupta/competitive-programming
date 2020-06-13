@@ -1,0 +1,1 @@
+Regex_Pattern = r'^[a-z][^-0][^a-z][^A-Z][A-Z]'	# Do not delete 'r'.

@@ -1,0 +1,1 @@
+$Regex_Pattern = '/^tac(tac(tic)?)*$/'; //Do not delete '/'. Replace __________ with your regex.
