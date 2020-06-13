@@ -13,6 +13,7 @@ The structure of the repository is as follows :
  ┃ ┣ 📂30-days-of-code &#x2757;\
  ┃ ┣ 📂cpp &#x2705;\
  ┃ ┣ 📂interview-preparation-kit &#x2757;\
+ ┃ ┣ 📂regex &#x2705;\
  ┃\
  ┣ 📂**leetcode**\
  ┃ ┣ 📂june-leetcoding-challenge &#x2757;\
@@ -25,4 +26,4 @@ The structure of the repository is as follows :
  &#x274C; [ Abandoned ] ... may look into this sometime later
  
 
-I will be adding more stuff soon.
+I will be keep adding stuff :)
