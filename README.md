@@ -13,11 +13,12 @@ The structure of the repository is as follows :
  ┃ ┣ 📂30-days-of-code &#x2757;\
  ┃ ┣ 📂cpp &#x2705;\
  ┃ ┣ 📂interview-preparation-kit &#x2757;\
- ┃ ┣ 📂regex &#x2705;\
+ ┃ ┗ 📂regex &#x2705;\
  ┃\
  ┣ 📂**leetcode**\
  ┃ ┣ 📂june-leetcoding-challenge &#x2757;\
  ┃ ┣ 📂may-leetcoding-challenge &#x274C;\
+ ┃ ┗ 📂problems &#x2757;\
  ┃\
  ┗ 📜README.md
  
