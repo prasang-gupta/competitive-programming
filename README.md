@@ -28,4 +28,4 @@ The structure of the repository is as follows :
  &#x274C; [ Abandoned ] ... may look into this sometime later
  
 
-I will be keep adding stuff :)
+I will keep adding stuff :)
