@@ -16,9 +16,11 @@ The structure of the repository is as follows :
  ┃ ┗ 📂 regex &#x2705;\
  ┃\
  ┣ 📂 **leetcode**\
- ┃ ┣ 📂 july-leetcoding-challenge &#x2757;\
- ┃ ┣ 📂 june-leetcoding-challenge &#x2757;\
- ┃ ┣ 📂 may-leetcoding-challenge &#x274C;\
+ ┃ ┣ 📂 monthly-leetcoding-challenges
+ ┃ ┃ ┣ 📂 2021-01 &#x2757;\
+ ┃ ┃ ┣ 📂 2020-07 &#x2757;\
+ ┃ ┃ ┣ 📂 2020-06 &#x2757;\
+ ┃ ┃ ┣ 📂 2020-05 &#x274C;\
  ┃ ┗ 📂 problems &#x2757;\
  ┃\
  ┗ 📜 README.md
