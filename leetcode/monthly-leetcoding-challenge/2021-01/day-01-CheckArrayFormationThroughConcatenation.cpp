@@ -1,7 +1,8 @@
 class Solution {
 public:
     bool canFormArray(vector<int>& arr, vector<vector<int>>& pieces) {
-        for (int i = 0; i < arr.size(); ++i){
+        ios::sync_with_stdio(false); cin.tie(NULL); cout.tie(NULL);
+	for (int i = 0; i < arr.size(); ++i){
             int flag = 0;
             for (int j = 0; j < pieces.size(); ++j){
                 if (arr[i] == pieces[j][0]){
