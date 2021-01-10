@@ -44,11 +44,14 @@ Each node has a unique integer value from 1 to 100.
  *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
  * };
  */
+
 class Solution {
 public:
-    bool isCousins(TreeNode* root, int x, int y) {
-        ios::sync_with_stdio(false); cin.tie(NULL); cout.tie(NULL);
+    Solution () {
+        ios::sync_with_stdio(false); cin.tie(nullptr); cout.tie(nullptr);
+    }
 
+    bool isCousins(TreeNode* root, int x, int y) {
         vector <TreeNode*> queue;
         queue.push_back(root);
         int x_matched = 0, y_matched = 0, xidx = -1, yidx = -1;

@@ -23,8 +23,11 @@ Could you solve it in logarithmic time complexity?
 
 class Solution {
 public:
+    Solution () {
+        ios::sync_with_stdio(false); cin.tie(nullptr); cout.tie(nullptr);
+    }
+    
     int hIndex(vector<int>& citations) {
-        ios::sync_with_stdio(false); cin.tie(NULL); cout.tie(NULL);
         int idx = 0;
         for (int i = citations.size() - 1; i >= 0 ; --i){
             ++idx;

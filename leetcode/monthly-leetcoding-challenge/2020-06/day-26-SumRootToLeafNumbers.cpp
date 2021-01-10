@@ -47,11 +47,11 @@ Therefore, sum = 495 + 491 + 40 = 1026.
  */
 class Solution {
 public:
-    int sum;
-    
     Solution () {
-        ios::sync_with_stdio(false); cin.tie(NULL); cout.tie(NULL);
+        ios::sync_with_stdio(false); cin.tie(nullptr); cout.tie(nullptr);
     }
+    
+    int sum;
     
     void getsum (TreeNode* root, int num) {
         if (root == NULL){

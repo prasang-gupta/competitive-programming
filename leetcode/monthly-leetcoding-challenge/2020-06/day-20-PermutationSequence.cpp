@@ -27,8 +27,11 @@ Output: "2314"
 
 class Solution {
 public:
+    Solution () {
+        ios::sync_with_stdio(false); cin.tie(nullptr); cout.tie(nullptr);
+    }
+    
     string getPermutation(int n, int k) {
-        ios::sync_with_stdio(false); cin.tie(NULL); cout.tie(NULL);
         --k;
         int lastfac = 1, curdigit, lastn = n;
         string ans = "";

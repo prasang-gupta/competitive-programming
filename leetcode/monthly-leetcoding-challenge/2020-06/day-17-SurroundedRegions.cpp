@@ -22,6 +22,10 @@ Surrounded regions shouldn’t be on the border, which means that any 'O' on the
 
 class Solution {
 public:
+    Solution () {
+        ios::sync_with_stdio(false); cin.tie(nullptr); cout.tie(nullptr);
+    }
+    
     void change_boundary_connected_vals (vector <vector <char> > &a, const int r, const int c, int i, int j) {
         a[i][j] = 'Z';
         if (i > 0 && a[i-1][j] == 'O'){
@@ -39,7 +43,6 @@ public:
     }
     
     void solve(vector<vector<char>>& board) {
-        ios::sync_with_stdio(false); cin.tie(NULL); cout.tie(NULL);
         const int r = board.size();
         if (!r)
             return;

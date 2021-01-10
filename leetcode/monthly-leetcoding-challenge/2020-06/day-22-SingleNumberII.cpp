@@ -17,8 +17,11 @@ Output: 99
 
 class Solution {
 public:
+    Solution () {
+        ios::sync_with_stdio(false); cin.tie(nullptr); cout.tie(nullptr);
+    }
+    
     int singleNumber(vector<int>& nums) {
-        ios::sync_with_stdio(false); cin.tie(NULL); cout.tie(NULL);
         int one = 0, two = 0;
         for (int i = 0; i < nums.size(); ++i){
             one = (one ^ nums[i]) & ~two;

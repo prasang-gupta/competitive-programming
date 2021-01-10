@@ -26,6 +26,10 @@ You may assume that both strings contain only lowercase letters.
 
 class Solution {
 public:
+    Solution () {
+        ios::sync_with_stdio(false); cin.tie(nullptr); cout.tie(nullptr);
+    }
+
     vector <int> letter_dist(string s){
         vector <int> dist(26,0);
         for (int i = 0; i < s.size(); ++i){
@@ -35,8 +39,6 @@ public:
     }
     
     bool canConstruct(string ransomNote, string magazine) {
-        ios::sync_with_stdio(false); cin.tie(NULL); cout.tie(NULL);
-
         vector <int> rd, md;
         rd = letter_dist(ransomNote);
         md = letter_dist(magazine);

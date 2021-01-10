@@ -34,8 +34,13 @@ Google: 90% of our engineers use the software you wrote (Homebrew), but you canâ
  *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
  * };
  */
+
 class Solution {
 public:
+    Solution () {
+        ios::sync_with_stdio(false); cin.tie(nullptr); cout.tie(nullptr);
+    }
+
     void invert (TreeNode* root) {
         if (root == nullptr)
             return;
@@ -46,8 +51,8 @@ public:
         root->left = root->right;
         root->right = temp;
     }
+    
     TreeNode* invertTree(TreeNode* root) {
-        ios::sync_with_stdio(false); cin.tie(NULL); cout.tie(NULL);
         invert(root);
         return root;
     }

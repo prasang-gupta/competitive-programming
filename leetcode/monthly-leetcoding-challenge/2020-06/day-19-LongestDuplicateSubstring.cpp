@@ -23,6 +23,10 @@ S consists of lowercase English letters.
 
 class Solution {
 public:
+    Solution () {
+        ios::sync_with_stdio(false); cin.tie(nullptr); cout.tie(nullptr);
+    }
+    
     int search (int len, int a, long long modulus, int n, vector <int> &nums) {
         long long h = 0;
         for (int i = 0; i < len; ++i){
@@ -49,7 +53,6 @@ public:
     }
     
     string longestDupSubstring(string S) {
-        ios::sync_with_stdio(false); cin.tie(NULL); cout.tie(NULL);
         int n = S.size(), a = 26, left, right, mid, start;
         long long modulus = pow(2, 32);
         vector <int> nums(n);

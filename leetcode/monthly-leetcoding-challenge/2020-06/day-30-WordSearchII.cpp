@@ -89,11 +89,11 @@ public:
 
 class Solution {
 public:
-    set <string> result;
-    
     Solution () {
         ios::sync_with_stdio(false); cin.tie(NULL); cout.tie(NULL);
     }
+
+    set <string> result;
     
     void dfs (vector<vector<char>>& board, vector <vector <bool> > &visited, string str, int i, int j, Trie* trie) {
         int m = board.size(), n = board[0].size();

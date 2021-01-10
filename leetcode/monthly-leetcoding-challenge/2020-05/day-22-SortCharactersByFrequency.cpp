@@ -38,9 +38,11 @@ Note that 'A' and 'a' are treated as two different characters.
 
 class Solution {
 public:
-    string frequencySort(string s) {
-        ios::sync_with_stdio(false); cin.tie(NULL); cout.tie(NULL);
-        
+    Solution () {
+        ios::sync_with_stdio(false); cin.tie(nullptr); cout.tie(nullptr);
+    }
+
+    string frequencySort(string s) {        
         map <char, int> m;
         for (int i = 0; i < s.size(); ++i){
             m[s[i]]++;

@@ -40,8 +40,11 @@ typedef tuple <int, int, int> T;
 
 class Solution {
 public:
+    Solution () {
+        ios::sync_with_stdio(false); cin.tie(nullptr); cout.tie(nullptr);
+    }
+    
     int findCheapestPrice(int n, vector<vector<int>>& flights, int src, int dst, int K) {
-        ios::sync_with_stdio(false); cin.tie(NULL); cout.tie(NULL);
         unordered_map <int, vector <P> > adj;
         int u, v, w, result, k;
         for (const auto& flight: flights){

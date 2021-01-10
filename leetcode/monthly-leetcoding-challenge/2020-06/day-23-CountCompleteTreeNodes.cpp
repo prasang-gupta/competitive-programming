@@ -31,6 +31,10 @@ Output: 6
  */
 class Solution {
 public:
+    Solution () {
+        ios::sync_with_stdio(false); cin.tie(nullptr); cout.tie(nullptr);
+    }
+    
     int count;
     
     void getTreeCount (TreeNode* root) {
@@ -43,7 +47,6 @@ public:
     }
     
     int countNodes(TreeNode* root) {
-        ios::sync_with_stdio(false); cin.tie(NULL); cout.tie(NULL);
         count = 0;
         getTreeCount(root);
         return count;

@@ -23,9 +23,11 @@ Constraints:
 
 class Solution {
 public:
+    Solution () {
+        ios::sync_with_stdio(false); cin.tie(nullptr); cout.tie(nullptr);
+    }
+    
     int singleNonDuplicate(vector<int>& nums) {
-        ios::sync_with_stdio(false); cin.tie(NULL); cout.tie(NULL);
-
         int left = 0, right = nums.size()-1, centre;
         
         if (nums.size() == 1){

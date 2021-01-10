@@ -39,8 +39,13 @@ What if the BST is modified (insert/delete operations) often and you need to fin
  *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
  * };
  */
+
 class Solution {
 public:
+    Solution () {
+        ios::sync_with_stdio(false); cin.tie(nullptr); cout.tie(nullptr);
+    }
+
     int count = 0;
     TreeNode* inorder_traversal(TreeNode* root, int k){
         if (root == NULL){
@@ -60,8 +65,6 @@ public:
         return inorder_traversal(root->right, k);
     }
     int kthSmallest(TreeNode* root, int k) {
-        ios::sync_with_stdio(false); cin.tie(NULL); cout.tie(NULL);
-
         return inorder_traversal(root, k)->val;
     }
 };

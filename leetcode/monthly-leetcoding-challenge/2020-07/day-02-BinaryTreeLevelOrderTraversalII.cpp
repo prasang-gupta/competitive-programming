@@ -29,11 +29,11 @@ return its bottom-up level order traversal as:
  */
 class Solution {
 public:
-    vector <vector <int> > ans;
-    
     Solution () {
         ios::sync_with_stdio(false); cin.tie(NULL); cout.tie(NULL);
     }
+    
+    vector <vector <int> > ans;
     
     void make_reverse_tree (TreeNode* root, int depth) {
         if (root == NULL){

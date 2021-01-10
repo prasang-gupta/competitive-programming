@@ -46,9 +46,11 @@ trust[i][0] != trust[i][1]
 
 class Solution {
 public:
-    int findJudge(int N, vector<vector<int>>& trust) {
-        ios::sync_with_stdio(false); cin.tie(NULL); cout.tie(NULL);
-        
+    Solution () {
+        ios::sync_with_stdio(false); cin.tie(nullptr); cout.tie(nullptr);
+    }
+
+    int findJudge(int N, vector<vector<int>>& trust) {    
         vector <int> truster(N,0), trusted(N,0);
         for (int i = 0; i < trust.size(); ++i){
             truster[trust[i][0]-1] += 1;

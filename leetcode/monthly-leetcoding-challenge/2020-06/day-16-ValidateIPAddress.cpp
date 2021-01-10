@@ -35,6 +35,10 @@ Explanation: This is neither a IPv4 address nor a IPv6 address.
 
 class Solution {
 public:
+    Solution () {
+        ios::sync_with_stdio(false); cin.tie(nullptr); cout.tie(nullptr);
+    }
+    
     bool isvalidcharv6 (char a) {
         if (a >= '0' && a <= '9')
             return true;
@@ -56,7 +60,6 @@ public:
     }
     
     string validIPAddress(string IP) {
-        ios::sync_with_stdio(false); cin.tie(NULL); cout.tie(NULL);
         int numcolon, numdot;
         numdot = count (IP.begin(), IP.end(), '.');
         numcolon = count (IP.begin(), IP.end(), ':');

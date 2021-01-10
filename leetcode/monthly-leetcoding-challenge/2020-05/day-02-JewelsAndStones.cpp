@@ -19,6 +19,10 @@ The characters in J are distinct.
 
 class Solution {
 public:
+    Solution () {
+        ios::sync_with_stdio(false); cin.tie(nullptr); cout.tie(nullptr);
+    }
+
     vector <int> create_mapping(string J){
         vector <int> res(52,0);
         for (int i = 0; i < J.size(); ++i){
@@ -33,8 +37,6 @@ public:
     }
     
     int numJewelsInStones(string J, string S) {
-        ios::sync_with_stdio(false); cin.tie(NULL); cout.tie(NULL);
-
         int num = 0;
         vector <int> mapping = create_mapping(J);
         for (int i = 0; i < S.size(); ++i){

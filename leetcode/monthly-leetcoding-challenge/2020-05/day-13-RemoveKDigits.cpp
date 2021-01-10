@@ -23,9 +23,11 @@ Explanation: Remove all the digits from the number and it is left with nothing w
 
 class Solution {
 public:
+    Solution () {
+        ios::sync_with_stdio(false); cin.tie(nullptr); cout.tie(nullptr);
+    }
+
     string removeKdigits(string num, int k) {
-        ios::sync_with_stdio(false); cin.tie(NULL); cout.tie(NULL);
-        
         vector <char> res;
         string result = "";
         int breakflag = 0;

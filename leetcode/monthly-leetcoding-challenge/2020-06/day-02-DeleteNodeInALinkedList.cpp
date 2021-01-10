@@ -35,10 +35,14 @@ Do not return anything from your function.
  *     ListNode(int x) : val(x), next(NULL) {}
  * };
  */
+
 class Solution {
 public:
+    Solution () {
+        ios::sync_with_stdio(false); cin.tie(nullptr); cout.tie(nullptr);
+    }
+    
     void deleteNode(ListNode* node) {
-        ios::sync_with_stdio(false); cin.tie(NULL); cout.tie(NULL);
         node->val = node->next->val;
         node->next = node->next->next;
     }

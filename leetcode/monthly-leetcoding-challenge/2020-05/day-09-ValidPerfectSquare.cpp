@@ -22,9 +22,11 @@ Constraints:
 
 class Solution {
 public:
-    bool isPerfectSquare(int num) {
-        ios::sync_with_stdio(false); cin.tie(NULL); cout.tie(NULL);
+    Solution () {
+        ios::sync_with_stdio(false); cin.tie(nullptr); cout.tie(nullptr);
+    }
 
+    bool isPerfectSquare(int num) {
         if (num == 1){
             return true;
         }

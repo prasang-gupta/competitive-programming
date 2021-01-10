@@ -25,9 +25,11 @@ This question is the same as 1009: https://leetcode.com/problems/complement-of-b
 
 class Solution {
 public:
-    int findComplement(int num) {
-        ios::sync_with_stdio(false); cin.tie(NULL); cout.tie(NULL);
+    Solution () {
+        ios::sync_with_stdio(false); cin.tie(nullptr); cout.tie(nullptr);
+    }
 
+    int findComplement(int num) {
         string a = bitset<32>(num).to_string();
         int leadingzero = 1;
         for (int i = 0; i < a.size(); ++i){

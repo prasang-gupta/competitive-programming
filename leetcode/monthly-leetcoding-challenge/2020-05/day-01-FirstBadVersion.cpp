@@ -21,9 +21,11 @@ Then 4 is the first bad version.
 
 class Solution {
 public:
-    int firstBadVersion(int n) {
-        ios::sync_with_stdio(false); cin.tie(NULL); cout.tie(NULL);
+    Solution () {
+        ios::sync_with_stdio(false); cin.tie(nullptr); cout.tie(nullptr);
+    }
 
+    int firstBadVersion(int n) {
         int left = 0, right = n-1, centre;
         bool centreval;
         while(right >= left){

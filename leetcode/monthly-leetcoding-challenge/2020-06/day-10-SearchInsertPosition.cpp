@@ -23,8 +23,11 @@ Output: 0
 
 class Solution {
 public:
+    Solution () {
+        ios::sync_with_stdio(false); cin.tie(nullptr); cout.tie(nullptr);
+    }
+    
     int searchInsert(vector<int>& nums, int target) {
-        ios::sync_with_stdio(false); cin.tie(NULL); cout.tie(NULL);
         return lower_bound(nums.begin(), nums.end(), target) - nums.begin();
     }
 };

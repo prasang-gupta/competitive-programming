@@ -18,8 +18,11 @@ Could you come up with a one-pass algorithm using only constant space?
 
 class Solution {
 public:
+    Solution () {
+        ios::sync_with_stdio(false); cin.tie(nullptr); cout.tie(nullptr);
+    }
+    
     void sortColors(vector<int>& nums) {
-        ios::sync_with_stdio(false); cin.tie(NULL); cout.tie(NULL);
         vector <int>::iterator i = nums.begin(), j = nums.end() - 1, it = nums.begin();
         int temp;
         

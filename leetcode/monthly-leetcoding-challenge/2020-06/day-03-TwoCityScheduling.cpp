@@ -27,12 +27,15 @@ It is guaranteed that costs.length is even.
 
 class Solution {
 public:
+    Solution () {
+        ios::sync_with_stdio(false); cin.tie(nullptr); cout.tie(nullptr);
+    }
+    
     static bool sorthelp(vector <int> &a, vector <int> &b) {
         return (a[0] - a[1] < b[0] - b[1]);
     }
     
     int twoCitySchedCost(vector<vector<int>>& costs) {
-        ios::sync_with_stdio(false); cin.tie(NULL); cout.tie(NULL);
         nth_element(costs.begin(), costs.begin() + costs.size()/2, costs.end(), sorthelp);
         
         int cost = 0;

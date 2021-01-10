@@ -26,6 +26,10 @@ The value of each color in image[i][j] and newColor will be an integer in [0, 65
 
 class Solution {
 public:
+    Solution () {
+        ios::sync_with_stdio(false); cin.tie(nullptr); cout.tie(nullptr);
+    }
+
     vector<vector<int>> imgfill(vector<vector<int>>& image, vector<vector<int>>& visited, int sr, int sc, int startColor, int newColor){
         image[sr][sc] = newColor;
         visited[sr][sc] = 1;
@@ -50,10 +54,3 @@ public:
         return imgfill(image, visited, sr, sc, startColor, newColor);
     }
 };
-
-static auto speedup = []() {
-    ios::sync_with_stdio(false);
-    cin.tie(nullptr);
-    cout.tie(nullptr);
-    return nullptr;
-}();

@@ -32,6 +32,10 @@ The substring with start index = 2 is "ab", which is an anagram of "ab".
 
 class Solution {
 public:
+    Solution () {
+        ios::sync_with_stdio(false); cin.tie(nullptr); cout.tie(nullptr);
+    }
+
     vector <int> letter_dist(string s){
         vector <int> dist(26,0);
         for (int i = 0; i < s.size(); ++i){
@@ -41,8 +45,6 @@ public:
     }
     
     vector<int> findAnagrams(string s, string p) {
-        ios::sync_with_stdio(false); cin.tie(NULL); cout.tie(NULL);
-
         vector <int> pdist = letter_dist(p);
         int psize = p.size();
         vector <int> result;

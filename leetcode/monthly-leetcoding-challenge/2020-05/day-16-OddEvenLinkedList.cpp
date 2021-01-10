@@ -30,6 +30,10 @@ The first node is considered odd, the second node even and so on ...
 
 class Solution {
 public:
+    Solution () {
+        ios::sync_with_stdio(false); cin.tie(nullptr); cout.tie(nullptr);
+    }
+
     ListNode* oddEvenList(ListNode* head) {
         if (head == NULL || head->next == NULL || head->next->next == NULL){
             return head;
@@ -56,10 +60,3 @@ public:
         }
     }
 };
-
-static auto speedup = []() {
-    ios::sync_with_stdio(false);
-    cin.tie(nullptr);
-    cout.tie(nullptr);
-    return nullptr;
-}();

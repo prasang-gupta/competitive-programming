@@ -13,9 +13,11 @@ Note: You may assume the string contain only lowercase letters.
 
 class Solution {
 public:
+    Solution () {
+        ios::sync_with_stdio(false); cin.tie(nullptr); cout.tie(nullptr);
+    }
+
     int firstUniqChar(string s) {
-        ios::sync_with_stdio(false); cin.tie(NULL); cout.tie(NULL);
-        
         vector <int> letters(26,0);
         for (int i = 0; i < s.size(); ++i){
             letters[s[i]-'a'] += 1;

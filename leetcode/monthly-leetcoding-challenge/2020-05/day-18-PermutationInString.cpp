@@ -22,6 +22,10 @@ The length of both given strings is in range [1, 10,000].
 
 class Solution {
 public:
+    Solution () {
+        ios::sync_with_stdio(false); cin.tie(nullptr); cout.tie(nullptr);
+    }
+
     vector <int> letter_dist(string s){
         vector <int> dist(26,0);
         for (int i = 0; i < s.size(); ++i){
@@ -31,8 +35,6 @@ public:
     }
     
     bool checkInclusion(string s1, string s2) {
-        ios::sync_with_stdio(false); cin.tie(NULL); cout.tie(NULL);
-
         int size = s1.size();
         vector <int> s1dist = letter_dist(s1), subdist = letter_dist(s2.substr(0, size));
         if (subdist == s1dist){

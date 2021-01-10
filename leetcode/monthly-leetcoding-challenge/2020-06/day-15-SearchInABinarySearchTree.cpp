@@ -34,8 +34,11 @@ Note that an empty tree is represented by NULL, therefore you would see the expe
  */
 class Solution {
 public:
+    Solution () {
+        ios::sync_with_stdio(false); cin.tie(nullptr); cout.tie(nullptr);
+    }
+    
     TreeNode* searchBST(TreeNode* root, int val) {
-        ios::sync_with_stdio(false); cin.tie(NULL); cout.tie(NULL);
         while (root != NULL){
             if (val == root->val){
                 return root;

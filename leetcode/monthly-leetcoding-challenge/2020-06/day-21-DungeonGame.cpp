@@ -26,8 +26,11 @@ Any room can contain threats or power-ups, even the first room the knight enters
 
 class Solution {
 public:
+    Solution () {
+        ios::sync_with_stdio(false); cin.tie(nullptr); cout.tie(nullptr);
+    }
+    
     int calculateMinimumHP(vector<vector<int>>& dungeon) {
-        ios::sync_with_stdio(false); cin.tie(NULL); cout.tie(NULL);
         int r = dungeon.size(), c = dungeon[0].size(), minhealth;
         vector <vector <int>> dp(r+1, vector <int> (c+1, 0));
         dp[r][c] = 1;

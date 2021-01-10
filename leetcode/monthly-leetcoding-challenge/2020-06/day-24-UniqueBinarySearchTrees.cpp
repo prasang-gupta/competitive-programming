@@ -17,8 +17,11 @@ Given n = 3, there are a total of 5 unique BST's:
    
 class Solution {
 public:
+    Solution () {
+        ios::sync_with_stdio(false); cin.tie(nullptr); cout.tie(nullptr);
+    }
+    
     int numTrees(int n) {
-        ios::sync_with_stdio(false); cin.tie(NULL); cout.tie(NULL);
         vector <int> dp (n+1, 0);
         dp[0] = 1;
         dp[1] = 1;

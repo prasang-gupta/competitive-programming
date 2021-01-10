@@ -29,9 +29,11 @@ coordinates contains no duplicate point.
 
 class Solution {
 public:
-    bool checkStraightLine(vector<vector<int>>& coordinates) {
-        ios::sync_with_stdio(false); cin.tie(NULL); cout.tie(NULL);
+    Solution () {
+        ios::sync_with_stdio(false); cin.tie(nullptr); cout.tie(nullptr);
+    }
 
+    bool checkStraightLine(vector<vector<int>>& coordinates) {
         double slope,x1,x2,y1,y2;
         if (coordinates.size() == 2){
             return true;

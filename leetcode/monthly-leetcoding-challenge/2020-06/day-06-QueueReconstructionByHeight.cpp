@@ -16,6 +16,10 @@ Output:
 
 class Solution {
 public:
+    Solution () {
+        ios::sync_with_stdio(false); cin.tie(nullptr); cout.tie(nullptr);
+    }
+    
     static bool sorthelp(vector <int> &a, vector <int> &b) {
         if (a[0] == b[0])
             return a[1] > b[1];
@@ -23,7 +27,6 @@ public:
     }
     
     vector<vector<int>> reconstructQueue(vector<vector<int>>& people) {
-        ios::sync_with_stdio(false); cin.tie(NULL); cout.tie(NULL);
         sort(people.begin(), people.end(), sorthelp);
         
         vector <int> blankspace(people.size());

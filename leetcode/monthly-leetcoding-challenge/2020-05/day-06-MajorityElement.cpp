@@ -15,9 +15,11 @@ Output: 2
 
 class Solution {
 public:
-    int majorityElement(vector<int>& nums) {
-        ios::sync_with_stdio(false); cin.tie(NULL); cout.tie(NULL);
+    Solution () {
+        ios::sync_with_stdio(false); cin.tie(nullptr); cout.tie(nullptr);
+    }
 
+    int majorityElement(vector<int>& nums) {
         map <int,int> elem;
         map <int,int>::iterator it;
         if (nums.size() == 1){

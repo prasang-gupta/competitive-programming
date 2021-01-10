@@ -25,10 +25,13 @@ The input is two lists: the subroutines called and their arguments. Solution's c
 
 class Solution {
 public:
+    Solution () {
+        ios::sync_with_stdio(false); cin.tie(nullptr); cout.tie(nullptr);
+    }
+    
     vector <int> v;
     
     Solution(vector<int>& w) {
-        ios::sync_with_stdio(false); cin.tie(NULL); cout.tie(NULL);
         for (int i = 1; i < w.size(); ++i){
             w[i] += w[i-1];
         }

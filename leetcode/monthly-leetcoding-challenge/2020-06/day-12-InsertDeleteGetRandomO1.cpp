@@ -38,7 +38,6 @@ public:
     
     /** Initialize your data structure here. */
     RandomizedSet() {
-        ios::sync_with_stdio(false); cin.tie(NULL); cout.tie(NULL);
         srand(time(NULL));
     }
     
@@ -79,3 +78,10 @@ public:
  * bool param_2 = obj->remove(val);
  * int param_3 = obj->getRandom();
  */
+
+static auto speedup = []() {
+    ios::sync_with_stdio(false);
+    cin.tie(nullptr);
+    cout.tie(nullptr);
+    return nullptr;
+}();

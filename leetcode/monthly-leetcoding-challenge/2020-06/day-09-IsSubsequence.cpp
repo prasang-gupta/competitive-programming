@@ -30,6 +30,10 @@ Both strings consists only of lowercase characters.
 
 class Solution {
 public:
+    Solution () {
+        ios::sync_with_stdio(false); cin.tie(nullptr); cout.tie(nullptr);
+    }
+    
     bool isSubsequence(string s, string t) {
         ios::sync_with_stdio(false); cin.tie(NULL); cout.tie(NULL);
         int i, j;

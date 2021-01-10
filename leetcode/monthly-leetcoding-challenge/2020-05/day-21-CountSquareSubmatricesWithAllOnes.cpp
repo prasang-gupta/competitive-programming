@@ -41,9 +41,11 @@ Constraints:
 
 class Solution {
 public:
-    int countSquares(vector<vector<int>>& matrix) {
-        ios::sync_with_stdio(false); cin.tie(NULL); cout.tie(NULL);
+    Solution () {
+        ios::sync_with_stdio(false); cin.tie(nullptr); cout.tie(nullptr);
+    }
 
+    int countSquares(vector<vector<int>>& matrix) {
         vector <vector <int>> sum(matrix.size(), vector <int> (matrix[0].size(), 0));
         for (int i = 0; i < matrix.size(); ++i){
             for (int j = 0; j < matrix[i].size(); ++j){

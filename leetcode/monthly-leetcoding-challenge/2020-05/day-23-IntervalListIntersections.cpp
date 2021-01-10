@@ -26,9 +26,11 @@ NOTE: input types have been changed on April 15, 2019. Please reset to default c
 
 class Solution {
 public:
-    vector<vector<int>> intervalIntersection(vector<vector<int>>& A, vector<vector<int>>& B) {
-        ios::sync_with_stdio(false); cin.tie(NULL); cout.tie(NULL);
-        
+    Solution () {
+        ios::sync_with_stdio(false); cin.tie(nullptr); cout.tie(nullptr);
+    }
+
+    vector<vector<int>> intervalIntersection(vector<vector<int>>& A, vector<vector<int>>& B) {        
         int i = 0, j = 0;
         vector <vector <int>> ans;
         vector <int> temp(2);

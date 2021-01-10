@@ -19,8 +19,11 @@ Output: ["h","a","n","n","a","H"]
 
 class Solution {
 public:
+    Solution () {
+        ios::sync_with_stdio(false); cin.tie(nullptr); cout.tie(nullptr);
+    }
+    
     void reverseString(vector<char>& s) {
-        ios::sync_with_stdio(false); cin.tie(NULL); cout.tie(NULL);
         reverse(s.begin(), s.end());
     }
 };

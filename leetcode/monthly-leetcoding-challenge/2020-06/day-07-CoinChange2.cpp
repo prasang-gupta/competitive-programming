@@ -35,6 +35,10 @@ the answer is guaranteed to fit into signed 32-bit integer
 
 class Solution {
 public:
+    Solution () {
+        ios::sync_with_stdio(false); cin.tie(nullptr); cout.tie(nullptr);
+    }
+    
     int change(int amount, vector<int>& coins) {
         ios::sync_with_stdio(false); cin.tie(NULL); cout.tie(NULL);
         vector <int> dp(amount+1);

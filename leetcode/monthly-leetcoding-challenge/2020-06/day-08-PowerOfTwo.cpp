@@ -19,8 +19,11 @@ Output: false
 
 class Solution {
 public:
+    Solution () {
+        ios::sync_with_stdio(false); cin.tie(nullptr); cout.tie(nullptr);
+    }
+    
     bool isPowerOfTwo(int n) {
-        ios::sync_with_stdio(false); cin.tie(NULL); cout.tie(NULL);
         if (!n)
             return false;
         while (n % 2 == 0){

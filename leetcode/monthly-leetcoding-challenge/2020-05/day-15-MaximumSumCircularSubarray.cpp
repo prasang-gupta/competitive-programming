@@ -42,6 +42,10 @@ Note:
 
 class Solution {
 public:
+    Solution () {
+        ios::sync_with_stdio(false); cin.tie(nullptr); cout.tie(nullptr);
+    }
+
     int kadane(vector<int> a){
         int maxtillnow = 0;
         int overallmax = a[0];
@@ -58,8 +62,6 @@ public:
     }
     
     int maxSubarraySumCircular(vector<int>& A) {
-        ios::sync_with_stdio(false); cin.tie(NULL); cout.tie(NULL);
-        
         int maxsum = A[0];
         for (int i = 0; i < A.size(); ++i){
             if (maxsum < A[i]){

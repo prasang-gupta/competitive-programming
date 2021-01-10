@@ -19,8 +19,11 @@ There is only one duplicate number in the array, but it could be repeated more t
 
 class Solution {
 public:
+    Solution () {
+        ios::sync_with_stdio(false); cin.tie(nullptr); cout.tie(nullptr);
+    }
+    
     int findDuplicate(vector<int>& nums) {
-        ios::sync_with_stdio(false); cin.tie(NULL); cout.tie(NULL);
         int slow = 0, fast = 0, finder = 0;
         do {
             slow = nums[slow];
