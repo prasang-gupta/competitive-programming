@@ -28,10 +28,6 @@ struct TrieNode{
 
 class Trie {
 public:
-    Solution () {
-        ios::sync_with_stdio(false); cin.tie(NULL); cout.tie(NULL);
-    }
-
     TrieNode* root;
     /** Initialize your data structure here. */
     Trie() {
@@ -86,3 +82,10 @@ public:
  * bool param_2 = obj->search(word);
  * bool param_3 = obj->startsWith(prefix);
  */
+
+static auto speedup = []() {
+    ios::sync_with_stdio(false);
+    cin.tie(nullptr);
+    cout.tie(nullptr);
+    return nullptr;
+}();

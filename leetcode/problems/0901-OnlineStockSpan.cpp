@@ -35,10 +35,6 @@ The total time limit for this problem has been reduced by 75% for C++, and 50% f
 
 class StockSpanner {
 public:
-    Solution () {
-        ios::sync_with_stdio(false); cin.tie(NULL); cout.tie(NULL);
-    }
-
     vector <int> val, idx;
     int count;
     
@@ -70,3 +66,10 @@ public:
  * StockSpanner* obj = new StockSpanner();
  * int param_1 = obj->next(price);
  */
+
+static auto speedup = []() {
+    ios::sync_with_stdio(false);
+    cin.tie(nullptr);
+    cout.tie(nullptr);
+    return nullptr;
+}();
